@@ -28,4 +28,8 @@ describe('Age', () => {
   test('return the correct age for Jupiter', () => {
     expect(age.jupiterAge()).toEqual(2);
   });
+
+  test('returns the correct number of earth years remaining according to user input of life expectancy', () => {
+    expect(age.earthLifeLeft()).toEqual(42);
+  });
 });
