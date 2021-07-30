@@ -12,4 +12,8 @@ describe('Age', () => {
     expect(age.earthAge).toEqual(33);
     expect(age.lifeExpectancy).toEqual(75);
   });
+
+  test ('returns the correct age for Mercury', () => {
+    expect (age.mercuryAge).toEqual(137.5);
+  });
 });
