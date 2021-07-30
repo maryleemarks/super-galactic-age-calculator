@@ -23,4 +23,9 @@ export default class Age{
     this.earthAge = Math.floor(this.earthAge/11.86);
     return this.earthAge;
   }
+
+  earthLifeLeft() {
+    this.lifeExpectancy = Math.floor(this.lifeExpectancy - this.earthAge);
+    return this.lifeExpectancy;
+  }
 }  
