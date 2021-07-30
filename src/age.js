@@ -15,7 +15,12 @@ export default class Age{
   }
 
   marsAge(){
-    this.earthAge=Math.floor(this.earthAge/1.88);
+    this.earthAge = Math.floor(this.earthAge/1.88);
+    return this.earthAge;
+  }
+
+  jupiterAge() {
+    this.earthAge = Math.floor(this.earthAge/11.86);
     return this.earthAge;
   }
 }  
