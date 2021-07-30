@@ -1,4 +1,6 @@
 export default class Age{
-  //this.earthAge = earthAge;
-  //this.lifeExpectancy = lifeExpectancy;
-}
+  constructor(earthAge,lifeExpectancy){
+    this.earthAge = earthAge;
+    this.lifeExpectancy = lifeExpectancy;
+  }
+}  
