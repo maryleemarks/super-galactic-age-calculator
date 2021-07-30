@@ -13,7 +13,7 @@ describe('Age', () => {
     expect(age.lifeExpectancy).toEqual(75);
   });
 
-  test ('returns the correct age for Mercury', () => {
-    expect (age.mercuryAge).toEqual(137.5);
+  test('returns the correct age for Mercury', () => {
+    expect(age.mercuryAge()).toEqual(137);
   });
 });

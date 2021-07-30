@@ -3,4 +3,9 @@ export default class Age{
     this.earthAge = earthAge;
     this.lifeExpectancy = lifeExpectancy;
   }
+
+  mercuryAge(){
+    this.earthAge = Math.floor(this.earthAge/0.24);
+    return this.earthAge;
+  }
 }  
