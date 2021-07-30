@@ -8,4 +8,9 @@ export default class Age{
     this.earthAge = Math.floor(this.earthAge/0.24);
     return this.earthAge;
   }
+
+  venusAge(){
+    this.earthAge = Math.floor(this.earthAge/0.62);
+    return this.earthAge;
+  }
 }  
