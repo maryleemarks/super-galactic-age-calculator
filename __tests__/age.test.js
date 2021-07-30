@@ -24,4 +24,8 @@ describe('Age', () => {
   test('returns the correct age for Mars', () => {
     expect(age.marsAge()).toEqual(17);
   });
+
+  test('return the correct age for Jupiter', () => {
+    expect(age.jupiterAge()).toEqual(2);
+  });
 });
