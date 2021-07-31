@@ -31,4 +31,8 @@ export default class Age{
       return this.earthAge - this.lifeExpectancy;
     }
   }
+
+  mercuryLifeLeft() { 
+    return Math.floor((this.lifeExpectancy - this.earthAge) / 0.24);
+  }
 }    
