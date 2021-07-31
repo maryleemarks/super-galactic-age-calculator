@@ -49,6 +49,10 @@ export default class Age{
   }
 
   marsLifeLeft() {
-    return Math.floor((this.lifeExpectancy-this.earthAge) / 1.88);
+    if(this.lifeExpectancy >= this.earthAge){
+      return Math.floor((this.lifeExpectancy-this.earthAge) / 1.88);
+    }else{
+      return Math.floor((this.earthAge - this.lifeExpectancy) / 1.88);
+    }  
   }
 }    

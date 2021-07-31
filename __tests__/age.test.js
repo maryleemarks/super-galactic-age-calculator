@@ -54,6 +54,10 @@ describe('Age', () => {
   })
 
   test('return the number of Mars years remaining', () => {
-    expect(age.marsLifeLeft()).toEqual(-7)
+    expect(age.marsLifeLeft()).toEqual(6)
+  })
+
+  test('return the number of Mars years lived past life expectancy if life expectancy is exceeded', () => {
+    expect (age.marsLifeLeft()).toEqual(6)
   })
 });
