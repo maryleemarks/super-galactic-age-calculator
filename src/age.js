@@ -39,4 +39,8 @@ export default class Age{
       return Math.floor((this.earthAge - this.lifeExpectancy) / 0.24);
     }
   }
+
+  venusLifeLeft() {
+    return Math.floor((this.lifeExpectancy-this.earthAge) / 0.62);
+  }
 }    

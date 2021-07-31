@@ -44,4 +44,8 @@ describe('Age', () => {
   test('return the number of Mercury years lived past life expectancy if life expectancy is exceeded', () => {
     expect(age.mercuryLifeLeft()).toEqual(54)
   })
+
+  test('return the number of Venus years remaining', () => {
+    expect(age.venusLifeLeft()).toEqual(-21)
+  })
 });
