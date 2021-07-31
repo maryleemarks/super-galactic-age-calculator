@@ -30,7 +30,7 @@ describe('Age', () => {
   });
 
   test('returns the correct number of earth years remaining according to user input of life expectancy', () => {
-    expect(age.earthLifeLeft()).toEqual(-13);
+    expect(age.earthLifeLeft()).toEqual(13);
   });
 
   test('returns the number of years lived past life expectancy if life expectancy has been exceeded', () => {

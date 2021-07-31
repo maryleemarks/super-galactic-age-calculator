@@ -26,8 +26,9 @@ export default class Age{
 
   earthLifeLeft() {
     if(this.lifeExpectancy >= this.earthAge){
-     return this.lifeExpectancy-this.earthAge;
+     return this.lifeExpectancy - this.earthAge;
     }else{
-      return this.earthAge-this.lifeExpectancy;
+      return this.earthAge - this.lifeExpectancy;
     }
-  }  
+  }
+}    
