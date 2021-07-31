@@ -37,5 +37,7 @@ describe('Age', () => {
     expect(age.earthLifeLeft()).toEqual(13);
   });
 
-
+  test('return the number of Mercury years remaining', () => {
+    expect(age.mercuryLifeLeft()).toEqual(54) 
+  })
 });
