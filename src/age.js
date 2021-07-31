@@ -33,6 +33,10 @@ export default class Age{
   }
 
   mercuryLifeLeft() { 
-    return Math.floor((this.lifeExpectancy - this.earthAge) / 0.24);
+    if(this.lifeExpectancy >= this.earthAge){
+      return Math.floor((this.lifeExpectancy - this.earthAge) / 0.24);
+    }else{
+      return Math.floor((this.earthAge - this.lifeExpectancy) / 0.24);
+    }
   }
 }    
