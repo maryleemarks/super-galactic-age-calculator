@@ -55,4 +55,8 @@ export default class Age{
       return Math.floor((this.earthAge - this.lifeExpectancy) / 1.88);
     }  
   }
+
+  jupiterLifeLeft() {
+    return Math.floor((this.lifeExpectancy-this.earthAge) / 11.86);
+  }
 }    
