@@ -62,6 +62,10 @@ describe('Age', () => {
   })
 
   test('return the number of Jupiter years remaining', () => {
-    expect(age.jupiterLifeLeft()).toEqual(-2)
+    expect(age.jupiterLifeLeft()).toEqual(1)
+  })
+
+  test('return the number of Jupiter years lived past life expectancy if life expectancy is exceeded', () => {
+    expect (age.jupiterLifeLeft()).toEqual(1)
   })
 });
